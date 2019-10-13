@@ -236,7 +236,6 @@ input, text, button{
 .botones_tabla2{
     display:flex;
     flex-direction: column; 
-    margin:40px;
 }
 table{
     width: 400px;
@@ -265,10 +264,8 @@ tr:hover td{
     #contenido{
         display: inline-flex;
     }
-    .botones_tabla2, .ajax{
+    .botones_tabla2{
         flex-direction: row;
-        align-items: center;
-        /* width: 75%; */
     }
     .ocultar{
         display:none;
@@ -277,16 +274,4 @@ tr:hover td{
 
 .classlist_color{
     background-color: rgb(192, 104, 53);
-}
-.ocultar{
-    display: none;
-} 
-.ajax{
-    margin:40px;
-}
-.btn-post, .btn-get {
-    background-color:rgb(93, 81, 42);    
-    width: 30%;
-    border-radius: 1rem 1rem 1rem 1rem;
-    color: white;
 }
