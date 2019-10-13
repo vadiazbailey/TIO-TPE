@@ -1,0 +1,277 @@
+body{
+    bottom: 0;
+    width: 100%;
+    text-align: left;      
+    background-color:rgba(245, 245, 220, 0.452);
+    margin-inline-start: 0%; 
+    font-family:'Raleway',sans-serif;
+}
+
+h1{
+    color:black;
+    text-transform: uppercase;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+a {
+    text-decoration:none;
+}   
+h2{
+    color: black;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    font-family: 'Open Sans','HelveticaNeue','Helvetica Neue',Helvetica,Arial,sans-serif;
+    margin-bottom: 20px;
+}
+h3{
+    margin-top: 30px; 
+    color: rgb(196, 161, 95);
+    text-align: center;
+}
+h4{
+    color:black;
+}
+p{
+    margin-top: 10px; 
+    color: rgb(185, 158, 106);
+    margin: 30px 20px;  
+}
+span{
+    font-weight: bold;
+}
+
+/*-----imagenes-----*/
+img.imagen1,img.imagen2,img.imagen3,img.imagen4,img.imagen5,img.imagen6{
+    padding: 20px 20px;
+    background-color:rgb(93, 81, 42);
+    width:350px;
+    margin:20px 20px 20px 30px;
+    float:right;
+}
+
+img.imagen1:hover,img.imagen2:hover,img.imagen3:hover,img.imagen4:hover,img.imagen5:hover,img.imagen6:hover{
+    background-color: rgb(134, 107, 19);
+}
+
+img.foto1, img.foto2,img.foto3,img.foto4{
+    padding: 15px 15px;
+    background-color:rgb(196, 194, 194);
+    width:350px;
+    margin:20px 25px 20px 10px;
+    float:right;
+    border-radius:10px 10px 10px 10px ;
+}
+img.foto1:hover, img.foto2:hover,img.foto3:hover,img.foto4:hover{
+background-color:rgba(139, 112, 25, 0.685);
+}
+/*---- header/ banner superior -----*/
+#header-banner{
+    font-family:'Raleway',sans-serif;
+    text-align: center;
+    color:white;
+    background-color: rgb(93, 81, 42);
+    margin-top:0;
+}    
+.banner{
+    width:100%;
+    height:50px;
+    color:black;
+    padding:0;
+    margin-top:0;
+}
+.iconos-banner{
+    position:fixed;
+    right:0;
+    top:20%;
+    font-size:1.5rem;
+    display:flex;
+    flex-direction:column;
+    align-items: flex-end;
+    z-index:100;
+}
+.fab{
+    color: white;
+    text-decoration:none; 
+    padding: .7rem;
+    display:flex;
+    transition:all .5s;   
+    background:grey;
+}
+.fa-facebook-f{
+    font-size:30px;
+}
+.fab:hover{
+    padding-right:3rem;
+    border-radius: 1rem 0 1rem;
+    box-shadow: 0 0 .5rem rgba(0, 0, 0.42);
+}
+.fab:first-child{
+    border-radius: 1rem 0 0 1rem;
+}
+.fab:last-child{
+    border-radius:1rem 0 0 1rem;
+}
+/*-----menu de navegacion/botonera------*/
+.item,.log {
+    display: inline-block;
+    margin: 0px 20px;
+    color: white;
+    text-transform: uppercase;
+    font-family: Helvetica, sans-serif;
+    padding: 10px;
+  }
+.log{
+    text-transform: lowercase;
+}
+.navigation li:hover {
+    background-color: grey;
+}
+.navigation{
+    text-align:center;
+    background:rgba(93, 81, 42);
+    border-bottom:5px solid grey;
+}
+
+
+/*-----Scroll de imagenes|Home---*/
+.slider {
+    width:95%;
+    margin:auto;
+    overflow: hidden;
+}
+.slider ul{
+    display:flex;
+    padding:0;
+    width:400%;
+    animation: cambio 20s infinite;
+}
+.slider li{
+    width:100%; 
+    list-style: none;
+}
+
+.slider img {
+    width: 100%;
+}
+@keyframes cambio {
+    0% { margin-left: 0%;}
+    20% {margin-left: 0;}
+
+    25% {margin-left:-100%;}
+    45% {margin-left:-100%;}
+
+    50% {margin-left:-200%;}
+    70% {margin-left:-200%;}
+
+    75% {margin-left:-300%;}
+    100% {margin-left:-300%;}
+}
+
+/*------footer------*/
+footer{
+    font-family:Helvetica,sans-serif;
+    background-color:rgb(93, 81, 42);
+    width: 100%;
+    height:200px;
+    display:inline-block;
+    clear: both;
+    text-align:center;
+}
+/*------Formulario-------*/
+.registrado,.registrarse{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 50px; 
+    margin-left: 15px;
+}
+
+.registrado,.registrarse {
+    min-width: 50%;
+    display: block;
+}
+
+input.tamaño{
+    width: 200px;
+}
+
+input, text{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.compruebe_captcha{
+    margin:0px;
+}
+input, text, button{
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: "Open Sans","HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #494848;
+    font-weight: 400;
+}
+#button{
+    cursor: pointer;
+}
+#button:hover, .form-button:hover{
+    background: rgb(34, 40, 63);
+    color: white;
+
+}
+
+.filtrar{
+    background-color: rgb(241, 239, 239);
+}
+/*-------Tabla | Segundo html------*/
+#contenido{
+    background-color: white;
+    padding:1px;
+    overflow: hidden;
+    margin:0 5px;
+    position:relative;
+    flex-direction: row;
+}
+.botones_tabla2{
+    display:flex;
+    flex-direction: column; 
+}
+table{
+    width: 400px;
+    background-color:rgb(241, 226, 226);
+    text-align: center;
+    border-collapse: collapse;
+    margin:40px;
+}
+th,td,tr{
+    border:0;
+    padding:10px;
+    border-bottom: solid 5px white;
+}
+th{ 
+    font-family:sans-serif;
+    color:white;
+    background-color:rgb(93, 81, 42);    
+}
+tr:hover td{
+    background-color:rgba(110, 90, 25, 0.356);
+    color:white;
+}
+
+
+@media only screen and (min-width: 720px){
+    #contenido{
+        display: inline-flex;
+    }
+    .botones_tabla2{
+        flex-direction: row;
+    }
+    .ocultar{
+        display:none;
+    }    
+}
+
+.classlist_color{
+    background-color: rgb(192, 104, 53);
+}
